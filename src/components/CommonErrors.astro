@@ -2,76 +2,74 @@
 import ErrorCard from './ErrorCard.astro';
 ---
 
-<section>
-    <h2>Common Errors</h2>
+<h2>Common Errors</h2>
 
-    <div class="pair-grid">
-        <ErrorCard
-            type="bad"
-            errorName="Comma splice"
-            badgeText="✗ Incorrect"
-            tipText="Fix: Use a semicolon or full stop."
-        >
-            <p>I cannot remember my password, I created it long ago.</p>
-        </ErrorCard>
-        <ErrorCard
-            type="good"
-            errorName="Comma splice"
-            badgeText="✓ Correct"
-            tipText="Why: Two clauses joined correctly."
-        >
-            <p>I cannot remember my password; I created it long ago.</p>
-        </ErrorCard>
+<div class="pair-grid">
+    <ErrorCard
+        type="bad"
+        errorName="Comma splice"
+        badgeText="✗ Incorrect"
+        tipText="Fix: Use a semicolon or full stop."
+    >
+        <p>I cannot remember my password, I created it long ago.</p>
+    </ErrorCard>
+    <ErrorCard
+        type="good"
+        errorName="Comma splice"
+        badgeText="✓ Correct"
+        tipText="Why: Two clauses joined correctly."
+    >
+        <p>I cannot remember my password; I created it long ago.</p>
+    </ErrorCard>
 
-        <ErrorCard
-            type="bad"
-            errorName="Tense mix"
-            badgeText="✗ Incorrect"
-            tipText="Fix: Keep tense consistent."
-        >
-            <p>The authors provided a protocol and offer an alternative.</p>
-        </ErrorCard>
-        <ErrorCard
-            type="good"
-            errorName="Tense mix"
-            badgeText="✓ Correct"
-            tipText="Why: Present for general statements."
-        >
-            <p>The authors provide a protocol and offer an alternative.</p>
-        </ErrorCard>
+    <ErrorCard
+        type="bad"
+        errorName="Tense mix"
+        badgeText="✗ Incorrect"
+        tipText="Fix: Keep tense consistent."
+    >
+        <p>The authors provided a protocol and offer an alternative.</p>
+    </ErrorCard>
+    <ErrorCard
+        type="good"
+        errorName="Tense mix"
+        badgeText="✓ Correct"
+        tipText="Why: Present for general statements."
+    >
+        <p>The authors provide a protocol and offer an alternative.</p>
+    </ErrorCard>
 
-        <ErrorCard
-            type="bad"
-            errorName="Passive voice"
-            badgeText="Less direct"
-            tipText="Fix: Prefer active voice."
-        >
-            <p>The code was broken by Alan Turing.</p>
-        </ErrorCard>
-        <ErrorCard
-            type="good"
-            errorName="Active voice"
-            badgeText="✓ Preferred"
-            tipText="Why: S–V–O is direct."
-        >
-            <p>Alan Turing broke the code.</p>
-        </ErrorCard>
+    <ErrorCard
+        type="bad"
+        errorName="Passive voice"
+        badgeText="Less direct"
+        tipText="Fix: Prefer active voice."
+    >
+        <p>The code was broken by Alan Turing.</p>
+    </ErrorCard>
+    <ErrorCard
+        type="good"
+        errorName="Active voice"
+        badgeText="✓ Preferred"
+        tipText="Why: S–V–O is direct."
+    >
+        <p>Alan Turing broke the code.</p>
+    </ErrorCard>
 
-        <ErrorCard
-            type="bad"
-            errorName="Misplaced modifier"
-            badgeText="✗ Incorrect"
-            tipText="Fix: Make doer explicit."
-        >
-            <p>By working late, the essay was finished.</p>
-        </ErrorCard>
-        <ErrorCard
-            type="good"
-            errorName="Misplaced modifier"
-            badgeText="✓ Correct"
-            tipText='Why: Modifier attaches to "I".'
-        >
-            <p>By working late, I finished the essay.</p>
-        </ErrorCard>
-    </div>
-</section>
+    <ErrorCard
+        type="bad"
+        errorName="Misplaced modifier"
+        badgeText="✗ Incorrect"
+        tipText="Fix: Make doer explicit."
+    >
+        <p>By working late, the essay was finished.</p>
+    </ErrorCard>
+    <ErrorCard
+        type="good"
+        errorName="Misplaced modifier"
+        badgeText="✓ Correct"
+        tipText='Why: Modifier attaches to "I".'
+    >
+        <p>By working late, I finished the essay.</p>
+    </ErrorCard>
+</div>
